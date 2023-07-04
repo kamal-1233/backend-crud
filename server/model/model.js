@@ -7,8 +7,8 @@ var schema = new mangoose.Schema({
     email:{
         type:String,
     },
-    gender:String,
-    status:String 
+    gender:{type:String},
+    status:{type:String} 
 })
 
 const Userdb = mangoose.model('userdb',schema);
