@@ -5,25 +5,12 @@ const services= require ('../services/render');
 const controller = require('../controller/controller');
 
 
-/**
- * @description Root Route
- * @method GET /
- */
-
 route.get('/',services.homeRoutes);
 
-/**
- * @description Root Route
- * @method GET /add-user
- */
+
     
 route.get('/add_user',services.add_user)
 
-/**
- * @description Root Route
- * @method GET /update-user
- */
-   
 route.get('/update_user',services.update_user);
 
 

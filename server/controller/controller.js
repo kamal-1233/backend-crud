@@ -7,7 +7,6 @@ exports.create = (req, res) => {
     res.status(400).send({ message: "Content can not be empty!!" });
     return;
   }
-console.log(req.body);
   // Create a new user
   const user = new Userdb({
     name: req.body.name,
@@ -15,7 +14,6 @@ console.log(req.body);
     gender: req.body.Gender,
     status: req.body.Status
   });
-console.log(user);
   // Save the user in the database
   user.save()
     .then(data => {
